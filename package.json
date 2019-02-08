@@ -1,0 +1,78 @@
+{
+  "name": "react-components-lib",
+  "homepage": "https://github.com/raichev-dima/react-components-lib/",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react-scripts": "3.2.0",
+    "typescript": "3.6.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "lint:eslint": "eslint --ignore-path .gitignore",
+    "lint:ts": "npm run lint:eslint -- --ext .ts --ext .tsx .",
+    "lint:ts:fix": "npm run lint:ts -- --fix",
+    "dist": "rimraf dist && NODE_ENV=production webpack --config dist.config.js --mode=production"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@types/hoist-non-react-statics": "^3.3.1",
+    "@types/invariant": "^2.2.30",
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.11.7",
+    "@types/react": "^16.9.10",
+    "@types/react-dom": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
+    "acorn": "^6.3.0",
+    "cypress": "^3.5.0",
+    "eslint": "6.4.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "husky": "^3.0.9",
+    "precise-commits": "^1.0.2",
+    "prettier": "^1.18.2",
+    "react": "^16.8.0",
+    "react-docgen-typescript": "^1.15.1",
+    "react-dom": "^16.8.0",
+    "react-styleguidist": "^9.2.0",
+    "rimraf": "^3.0.0",
+    "ts-loader": "^6.2.1",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "precise-commits"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select renders properly 1`] = `
+Array [
+  <input
+    onBlur={[Function]}
+    onFocus={[Function]}
+    readOnly={true}
+    value=""
+  />,
+  <div
+    style={
+      Object {
+        "display": "none",
+        "position": "relative",
+        "userSelect": "none",
+      }
+    }
+  >
+    <div
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+    >
+      USA
+    </div>
+    <div
+      onClick={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+    >
+      Belarus
+    </div>
+  </div>,
+]
+`;

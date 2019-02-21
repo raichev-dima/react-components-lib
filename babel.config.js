@@ -1,20 +1,11 @@
-module.exports = {
-  presets: [
-    ['@babel/preset-env', {
-      useBuiltIns: 'entry',
-      loose: true
-    }],
-    '@babel/preset-react'
-  ],
-  plugins: [
-    [
-      '@babel/plugin-proposal-class-properties',
-      {
-        loose: true
-      }
-    ],
-    'react-css-modules',
-    '@babel/plugin-proposal-export-namespace-from',
-    '@babel/plugin-proposal-export-default-from'
-  ]
+module.exports = function (api) {
+  api.cache(true);
+
+  const presets = ["react-app"];
+  const plugins = [];
+
+  return {
+    presets,
+    plugins
+  };
 };
